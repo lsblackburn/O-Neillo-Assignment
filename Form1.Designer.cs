@@ -48,6 +48,7 @@ namespace O_Neillo_Assignment
             this.speakToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpItem = new System.Windows.Forms.ToolStripMenuItem();
             this.about_helpItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.toPlayWhite)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toPlayBlck)).BeginInit();
@@ -173,7 +174,8 @@ namespace O_Neillo_Assignment
             this.gameToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newGameItem,
             this.saveGameToolStripMenuItem,
-            this.restoreGameToolStripMenuItem});
+            this.restoreGameToolStripMenuItem,
+            this.exitToolStripMenuItem});
             this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
             this.gameToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.gameToolStripMenuItem.Text = "Game";
@@ -181,7 +183,7 @@ namespace O_Neillo_Assignment
             // newGameItem
             // 
             this.newGameItem.Name = "newGameItem";
-            this.newGameItem.Size = new System.Drawing.Size(147, 22);
+            this.newGameItem.Size = new System.Drawing.Size(180, 22);
             this.newGameItem.Text = "New";
             this.newGameItem.Click += new System.EventHandler(this.newGameItem_Click);
             // 
@@ -229,6 +231,13 @@ namespace O_Neillo_Assignment
             this.about_helpItem.Size = new System.Drawing.Size(150, 22);
             this.about_helpItem.Text = "About";
             this.about_helpItem.Click += new System.EventHandler(this.about_helpItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -281,6 +290,7 @@ namespace O_Neillo_Assignment
         private System.Windows.Forms.ToolStripMenuItem newGameItem;
         private System.Windows.Forms.ToolStripMenuItem saveGameToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem restoreGameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }
 
