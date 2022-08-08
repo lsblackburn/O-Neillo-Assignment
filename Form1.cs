@@ -108,16 +108,16 @@ namespace O_Neillo_Assignment
                 for (int Column = 0; Column <= 7; Column++)
                 {
                     oNeilloBoard[Row, Column] = 10;
-                    oNeilloBoard[3, 3] = 1;
-                    oNeilloBoard[4, 4] = 1;
-                    oNeilloBoard[4, 3] = 0;
-                    oNeilloBoard[3, 4] = 0;
                     // For loop, to loop through the array and set the default starting image icons
                     // Loops through and makes every icon green, which is then over written by specifically making
                     // the starting positions the required icons
                 }
             }
             toPlayBlck.Visible = true;
+            oNeilloBoard[3, 3] = 1;
+            oNeilloBoard[4, 4] = 1;
+            oNeilloBoard[4, 3] = 0;
+            oNeilloBoard[3, 4] = 0;
             // Sets toPlayBlck icon to true by default upon game starting
             // To notify whos turn it is first
         }
